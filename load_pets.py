@@ -2,10 +2,10 @@ import sqlite3
 
 def main():
     """
-    Connect to the pets.sql database
+    Connect to the pets.db database
     """
     # Connect to the database
-    conn = sqlite3.connect('pets.sql')
+    conn = sqlite3.connect('pets.db')
     cursor = conn.cursor()
     
     # Define the data to be inserted
@@ -47,7 +47,7 @@ def main():
     conn.commit()
     conn.close()
     
-    print("Data successfully loaded into pets.sql")
+    print("Data successfully loaded into pets.db")
 
 if __name__ == "__main__":
     main()
